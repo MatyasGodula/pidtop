@@ -78,7 +78,7 @@ The protocol is just files — `$TMPDIR/pidtop/<session>/<pid>.pid` containing a
 
 ## Docs
 
-Full documentation available at the [project docs](https://matyas.github.io/pidtop/) or build locally:
+Full documentation available at the [project docs](https://MatyasGodula.github.io/pidtop/) or build locally:
 
 ```bash
 mdbook serve docs
