@@ -7,4 +7,4 @@ title = "pidtop"
 [output.html]
 default-theme = "ayu"
 preferred-dark-theme = "ayu"
-git-repository-url = "https://github.com/matyas/pidtop"
+git-repository-url = "https://github.com/MatyasGodula/pidtop"
