@@ -36,6 +36,11 @@ pub enum Command {
         /// PID or name to remove
         target: String,
     },
+    /// Delete a session and all its pidfiles
+    Stop {
+        /// Session name
+        session: String,
+    },
     /// List all active sessions
     List,
 }

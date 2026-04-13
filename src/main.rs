@@ -17,6 +17,7 @@ fn main() -> Result<()> {
         Command::Add { session, pid, name } => session::add(&session, pid, name.as_deref()),
         Command::Show { session } => tui::run(&session),
         Command::Remove { session, target } => session::remove(&session, &target),
+        Command::Stop { session } => session::stop(&session),
         Command::List => session::list(),
     }
 }

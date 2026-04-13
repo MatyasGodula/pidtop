@@ -78,6 +78,16 @@ pub fn remove(session: &str, target: &str) -> Result<()> {
     bail!("no process matching '{target}' found in session '{session}'");
 }
 
+pub fn stop(session: &str) -> Result<()> {
+    let dir = session_dir(session);
+    if !dir.exists() {
+        bail!("session '{session}' does not exist");
+    }
+    fs::remove_dir_all(&dir).context("failed to remove session directory")?;
+    eprintln!("session '{session}' deleted");
+    Ok(())
+}
+
 pub fn list() -> Result<()> {
     let base = base_dir();
     if !base.exists() {
